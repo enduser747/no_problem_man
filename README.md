@@ -1,27 +1,21 @@
-# no_problem_man v1.0 — Windows Startup Control
+**no_problem_man v1.0 — Simple Windows Startup Control**
 
-A lightweight graphical utility for reviewing and disabling recognized optional startup apps on Windows 10/11. Built on the first working WinCare Startup core.
+A small, open-source PowerShell utility with a graphical interface for managing unnecessary Windows startup applications.
 
-## How to run
-1. Extract **all files** from the ZIP into the same folder.
-2. Double-click `START.cmd` and approve the Windows administrator prompt.
-3. In the window, choose **Optimize Startup** to apply changes, or **Restore** to restore a compatible backup.
+Many installed applications automatically add themselves to Windows startup, run silently in the background, or open unwanted windows.
 
-The included `DIAGNOSTICS.cmd` is only for investigating launch failures. Do not run it for normal use.
+**Features:**
 
-## Scope and limitations
-- Uses an allowlist of known applications; unknown items are left unchanged.
-- Covers selected Run keys, Startup shortcuts and compatible scheduled tasks; some recognized emulator updater services may also be affected.
-- Does not uninstall software or forcibly stop active apps. Does not require network access.
-- Backup data is kept under `%ProgramData%\no_problem_man\Backups`.
-- Running with administrator rights affects system startup settings. **Tested by the author on one Windows machine; not comprehensively validated across Windows 10/11 configurations.** Review the source and back up important data before use.
+- Disables startup entries for browsers, messengers, emulators, and other optional applications.
+- Also disables startup entries for applications that do not appear in Task Manager, using standard Windows methods.
+- Requires only a few Windows system confirmation prompts.
+- Creates backups and provides an option to restore changes.
+- Uses a predefined list of applications, so it is designed to leave drivers, antivirus software, and unknown startup entries untouched.
 
-## Українською
+Nothing revolutionary — just a practical way to automate routine startup cleanup.
 
-**no_problem_man v1.0** — графічна утиліта керування автозавантаженням Windows 10/11 на основі першої робочої WinCare Startup.
+**How to use:**
 
-**Запуск:** розпакуйте **усі файли** в одну папку, двічі натисніть `START.cmd` та підтвердьте права адміністратора. У вікні натисніть **Оптимізувати автозапуск** або **Відновити**. `DIAGNOSTICS.cmd` потрібен лише для пошуку помилок запуску.
-
-**Межі роботи:** програма розпізнає лише визначені необов'язкові застосунки, інші залишає без змін. Опрацьовує певні записи реєстру Run, ярлики Startup, сумісні завдання Планувальника та деякі визначені служби оновлення емуляторів. Програми не видаляє, активні процеси примусово не завершує, мережа не потрібна. Резервні копії — у `%ProgramData%\no_problem_man\Backups`.
-
-**Статус:** автор підтвердив роботу на одному комп'ютері з Windows; масштабної перевірки на різних конфігураціях Windows 10/11 ще не було. Програма працює з правами адміністратора, тому перед використанням рекомендовано переглянути відкритий код та зберегти важливі дані.
+1. Download the ZIP archive.
+2. Extract the archive.
+3. Run `START.cmd`.
