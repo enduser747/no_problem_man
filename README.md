@@ -1,4 +1,4 @@
-**no_problem_man v1.0 — Simple Windows Startup Control**
+**no_problem_man.zip v1.0 — Simple Windows Startup Control**
 
 A small, open-source PowerShell utility with a graphical interface for managing unnecessary Windows startup applications.
 
